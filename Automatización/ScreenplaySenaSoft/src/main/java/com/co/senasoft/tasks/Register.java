@@ -46,7 +46,7 @@ public class Register implements Task {
         }
         actor.attemptsTo(Click.on(RegisterPage.BTN_REGISTER));
         try {
-            Thread.sleep(4000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
