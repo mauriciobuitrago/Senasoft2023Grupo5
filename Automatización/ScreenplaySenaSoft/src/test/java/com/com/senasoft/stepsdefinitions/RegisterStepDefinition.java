@@ -1,5 +1,7 @@
 package com.com.senasoft.stepsdefinitions;
 
+import com.co.senasoft.Questions.ValidationLogin;
+import com.co.senasoft.Questions.ValiditionWrongLogin;
 import com.co.senasoft.models.RegisterData;
 import com.co.senasoft.tasks.ClickRegisterButton;
 import com.co.senasoft.tasks.Register;
@@ -8,11 +10,13 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
+import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
 
 import java.util.List;
@@ -42,7 +46,8 @@ public class RegisterStepDefinition {
 
     @Then("^the user should see the succesful register$")
     public void heUserShouldSeeTheSuccesfulRegister() {
-
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidationLogin.validationText()
+                , Matchers.is("¿Eres un robot?")));
     }
 
 
