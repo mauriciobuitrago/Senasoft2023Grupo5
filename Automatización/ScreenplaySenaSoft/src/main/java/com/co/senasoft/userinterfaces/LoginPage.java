@@ -18,4 +18,7 @@ public class LoginPage {
     public static final Target LBL_VALIDATION = Target.the("It is used to compare the final text")
             .locatedBy("//h3[contains(text(),\"¿Eres un robot?\")]");
 
+    public static final Target LBL_WRONG_PASSWORD = Target.the("It is used to enter the wrong password")
+            .locatedBy("//h3[contains(text(),'¿Eres un robot?')]");
+
 }

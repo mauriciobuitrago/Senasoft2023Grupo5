@@ -1,6 +1,7 @@
 package com.com.senasoft.stepsdefinitions;
 
 import com.co.senasoft.Questions.ValidationLogin;
+import com.co.senasoft.Questions.ValiditionWrongLogin;
 import com.co.senasoft.models.LoginData;
 import com.co.senasoft.tasks.*;
 import cucumber.api.java.en.And;
@@ -36,6 +37,26 @@ public class LoginStepDefinition {
     public void theUserShouldSeeTheSuccessfulLogin() {
               OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidationLogin.validationText()
               , Matchers.is("¿Eres un robot?")));
+    }
+
+    @When("^the user enter incorrect password$")
+    public void theUserEnterIncorrectPassword(List<LoginData> loginDataList) throws InterruptedException {
+        LoginData loginData;
+        loginData = loginDataList.get(0);
+        OnStage.theActorInTheSpotlight().attemptsTo(Login.enterData2(loginData));
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    @Then("^the user should see the unsuccessful login$")
+    public void theUserShouldSeeTheUnsuccessfulLogin() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValiditionWrongLogin.validitionWrongLogin()
+                , Matchers.is("¿Eres un robot?")));
+
     }
 
 }
