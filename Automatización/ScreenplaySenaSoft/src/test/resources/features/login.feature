@@ -13,4 +13,17 @@ Feature: Login
 
     Examples:
       | email2                 | password2      |
-      | Josefergo89@gmail.com | Joselito262005  |
+      | Josefergo89@gmail.com | Joselito262005 |
+
+    Scenario Outline: Login failed
+      And the user clicks on the 'iniciar sesion' button
+      When the user enter incorrect password
+        | email2   | password2   |
+        | <email2> | <password2> |
+      Then the user should see the unsuccessful login
+      Examples:
+        | email2                 | password2      |
+        | Josefergo89@gmail.com | Joselito26267605  |
+
+
+
