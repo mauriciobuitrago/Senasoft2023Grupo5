@@ -24,22 +24,18 @@ public class Login implements Task {
         }
         actor.attemptsTo(Click.on(LoginPage.BTN_SEND_EMAIL));
         try {
-            Thread.sleep(4000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         actor.attemptsTo(Enter.theValue(loginData.getPassword2()).into(LoginPage.TXT_PASSWORD));
         try {
-            Thread.sleep(4000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         actor.attemptsTo(Click.on(LoginPage.BTN_LOGIN));
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+
 
     }
 

@@ -15,4 +15,6 @@ public class LoginPage {
     public static final Target BTN_LOGIN  = Target.the("it is used to log in")
             .locatedBy("//button[@class = 'Iiab0gVMeWOd4XcyJGA3 wPxWIS_rJCpwAWksE0s3 Ut3prtt_wDsi7NM_83Jc TuDOVH9WFSdot9jLyXlw EJWUAldA4O1mP0SSFXPm whxYYRnvyHGyGqxO4ici']");
 
+    public static final Target LBL_VALIDATION = Target.the("It is used to compare the final text")
+            .locatedBy("//h3[contains(text(),\"¿Eres un robot?\")]");
 }
