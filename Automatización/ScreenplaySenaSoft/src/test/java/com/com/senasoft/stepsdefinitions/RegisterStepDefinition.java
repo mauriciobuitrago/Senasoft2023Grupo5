@@ -18,16 +18,6 @@ import org.openqa.selenium.WebDriver;
 import java.util.List;
 
 public class RegisterStepDefinition {
-    @Managed
-    WebDriver hisBrowser;
-
-    @Before
-    public void setUp()
-    {
-        OnStage.setTheStage(Cast.ofStandardActors());
-        OnStage.theActorCalled("User");
-        OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
-    }
 
 
     @Given("^the user enter to the web page$")
