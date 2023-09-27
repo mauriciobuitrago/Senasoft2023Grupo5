@@ -50,5 +50,21 @@ public class RegisterStepDefinition {
                 , Matchers.is("¿Eres un robot?")));
     }
 
+    @When("^the user enter his email and password but not the confirmation password$")
+    public void theUserEnterHisEmailAndPasswordButNotTheConfirmationPassword(List<RegisterData> registerDataList) throws InterruptedException {
+        RegisterData registerData;
+        registerData = registerDataList.get(0);
+        OnStage.theActorInTheSpotlight().attemptsTo(Register.enterData(registerData));
+        Thread.sleep(3000);
+    }
+
+
+    @Then("^the user should see the failed register$")
+    public void theUserShouldSeeTheFailedRegister() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValiditionWrongLogin.validitionWrongLogin()
+                , Matchers.is("¿Eres un robot?")));
+
+    }
+
 
 }
