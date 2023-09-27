@@ -8,6 +8,7 @@ import net.serenitybdd.screenplay.questions.Text;
 public class ValiditionWrongLogin implements Question<String> {
     @Override
     public String answeredBy(Actor actor) {
+
         return Text.of(LoginPage.LBL_WRONG_PASSWORD).viewedBy(actor).asString();
     }
 
