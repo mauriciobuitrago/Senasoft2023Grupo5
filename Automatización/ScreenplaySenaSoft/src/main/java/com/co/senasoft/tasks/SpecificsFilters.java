@@ -15,15 +15,22 @@ public class SpecificsFilters implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 MoveMouse.to(SearchResultsPage.CKH_HOTEL_STARS),
-                Click.on(SearchResultsPage.CKH_HOTEL_STARS),
-                Click.on(SearchResultsPage.SELECT_FILTER)
+                Click.on(SearchResultsPage.CKH_HOTEL_STARS)
         );
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        actor.attemptsTo(Click.on(SearchResultsPage.BTN_LOWER_PRICE));
+        actor.attemptsTo(
+                Click.on(SearchResultsPage.SELECT_FILTER),
+                Click.on(SearchResultsPage.BTN_LOWER_PRICE)
+        );
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static SpecificsFilters specificsFilters()

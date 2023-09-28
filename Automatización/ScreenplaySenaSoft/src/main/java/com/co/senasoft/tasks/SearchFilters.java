@@ -31,7 +31,6 @@ public class SearchFilters implements Task {
                 Click.on(HomePage.BTN_SELECT_CHILDREN_AGE2),
                 Click.on(HomePage.BTN_CHILDREN_AGE2),
                 Click.on(HomePage.BTN_ROOMS_INCREASE),
-                Click.on(HomePage.BTN_ROOMS_INCREASE),
                 Click.on(HomePage.BTN_READY)
         );
     }

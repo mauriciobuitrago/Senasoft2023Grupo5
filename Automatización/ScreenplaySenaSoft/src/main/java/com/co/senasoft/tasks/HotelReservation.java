@@ -15,6 +15,11 @@ public class HotelReservation implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Scroll.to(SearchResultsPage.BTN_SLIDE_RESERVATION));
         actor.attemptsTo(Click.on(SearchResultsPage.BTN_SLIDE_RESERVATION));
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         actor.attemptsTo(Click.on(SearchResultsPage.BTN_RESERVA));
         actor.attemptsTo(Enter.theValue("miguel").into(ReservationFormPage.TXT_FIRST_NAME));
         actor.attemptsTo(Enter.theValue(" perez").into(ReservationFormPage.TXT_LAST_NAME));
