@@ -130,9 +130,9 @@
             <span class="breadcrumbs">
                 <a href="index.html">Home</a>
                 > <span class="truncate-40"><a
-                    href="32208b4d7ad535ed145032f6093330222e3c248f1d5b13c727b4a770e5115946.html">Currency Exchange</a></span>
+                    href="87e16278283e9377047d97d8cef027569f1be7f593bf0af5d819847a3a649b1c.html">Reversation Import</a></span>
                 > <span class="truncate-60"><a
-                    href="9de24a5ba4911ffa8d2e4ebc1d4365c05224fc69008008e3084bd816dac2b882.html">Successful currency exchange </a></span>
+                    href="a2214d25e58f4860e3e20b2f76eb47fef7cd8fbf557a90e704db42a34ad4952d.html">Successful import </a></span>
                 > Screenshots
             </span>
         </div>
@@ -154,9 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-09-2023 09:36</span>
-
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-09-2023 19:14</span>
     <br style="clear:left"/>
 </div>
 
@@ -172,12 +170,12 @@
                             <div>
                                 <h3 class="discreet-story-header">
                                     <i class="fa fa-2x fa-comments-o"></i>
-                                    <span class="story-header-title">Currency Exchange </span>
+                                    <span class="story-header-title">Reversation Import </span>
                                     <span class="badge tag-badge" style="">Feature</span>
                                 </h3>
 
                                 <div class="discreet-requirement-narrative-title">
-                                I as user, I need to change from COP to USD
+                                I as user, I need to import a reservation that I made in another account
                                 </div>
                             </div>
 
@@ -191,9 +189,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Successful currency exchange
+                                <span class="error-color">Successful import
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -207,19 +205,64 @@
 
     <div class="clr"></div>
 
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given the user enter to the web page<br>When the user goes to the reservation page to click on import reservation<br>And he enters the data<br><table class='embedded'><tbody><tr><td>ConfirmationNumber</td></tr><tr><td>&lt;ConfirmationNumber&gt;</td></tr></tbody></table><br>Then the user should see the confirmed reservation</div>
+    </div>
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Cucumber exception: Arity mismatch: Step Definition 'com.com.senasoft.stepsdefinitions.ReservationStepDefinition.heEntersTheData() in file:/C:/Users/Sena/Documents/Senasoft2023Grupo5/Automatizaci%c3%b3n/ScreenplaySenaSoft/out/test/classes/' with pattern [^he enters the data$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Table:[[ConfirmationNumber], [4237403758]]]. </span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>cucumber.runtime.CucumberException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource11369760023941310534.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-
-                <img src="c84d0244659a7b9576ec492e4e71e342b3105cab7a65f9dae6f06a14ec4a0559.png" title=" Given the user is on the web page" width="1034"/>
-                <img src="53dcf29747b1e0c119308b7cf07276f9be972b788be0f48122f3a62110b49d6a.png" title=" When the user clicks on the currency icon to change it" width="1034"/>
-                <img src="53dcf29747b1e0c119308b7cf07276f9be972b788be0f48122f3a62110b49d6a.png" title=" User click currency button" width="1034"/>
-                <img src="53dcf29747b1e0c119308b7cf07276f9be972b788be0f48122f3a62110b49d6a.png" title=" When the user clicks on the currency icon to change it (completed)" width="1034"/>
-                <img src="53dcf29747b1e0c119308b7cf07276f9be972b788be0f48122f3a62110b49d6a.png" title=" Then the user should see the succesful currency exchange" width="1034"/>
-                <img src="53dcf29747b1e0c119308b7cf07276f9be972b788be0f48122f3a62110b49d6a.png" title=" Then validation currency should be 'US$16'" width="1034"/>
-                <img src="53dcf29747b1e0c119308b7cf07276f9be972b788be0f48122f3a62110b49d6a.png" title=" Then the user should see the succesful currency exchange (completed): <span class='success-color'>SUCCESS</span>" width="1034"/>
+                <img src="75b25c3b5eb4392030f74d2ad67b526a2c251c31cfe57e50d84c1078f60c8f53.png" title=" Example: {ConfirmationNumber=4237403758}" width="1034"/>
+                <img src="75b25c3b5eb4392030f74d2ad67b526a2c251c31cfe57e50d84c1078f60c8f53.png" title=" Given the user enter to the web page" width="1034"/>
+                <img src="75b25c3b5eb4392030f74d2ad67b526a2c251c31cfe57e50d84c1078f60c8f53.png" title=" When the user goes to the reservation page to click on import reservation" width="1034"/>
+                <img src="75b25c3b5eb4392030f74d2ad67b526a2c251c31cfe57e50d84c1078f60c8f53.png" title=" When the user goes to the reservation page to click on import reservation (completed)" width="1034"/>
+                <img src="75b25c3b5eb4392030f74d2ad67b526a2c251c31cfe57e50d84c1078f60c8f53.png" title=" And he enters the data
+| ConfirmationNumber |
+| 4237403758 |" width="1034"/>
+                <img src="75b25c3b5eb4392030f74d2ad67b526a2c251c31cfe57e50d84c1078f60c8f53.png" title=" And he enters the data
+| ConfirmationNumber |
+| 4237403758 | (completed): <span class='error-color'>ERROR</span>" width="1034"/>
             </div>
         </div>
 

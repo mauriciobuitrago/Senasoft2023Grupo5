@@ -37,4 +37,9 @@ public class HomePage {
     public static final Target BTN_SEARCH= Target.the("It is used to confirm the filters")
                 .locatedBy("//button[@class = 'a83ed08757 c21c56c305 a4c1805887 f671049264 d2529514af c082d89982 aa11d0d5cd']");
 
+    public static final Target BTN_FLIGHTS = Target.the("it is used to click on flights")
+            .locatedBy("  //a[@id=\"flights\"]");
+
+
+
 }
