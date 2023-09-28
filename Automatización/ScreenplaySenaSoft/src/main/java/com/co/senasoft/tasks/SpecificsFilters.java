@@ -16,9 +16,14 @@ public class SpecificsFilters implements Task {
         actor.attemptsTo(
                 MoveMouse.to(SearchResultsPage.CKH_HOTEL_STARS),
                 Click.on(SearchResultsPage.CKH_HOTEL_STARS),
-                Click.on(SearchResultsPage.SELECT_FILTER),
-                Click.on(SearchResultsPage.BTN_LOWER_PRICE)
+                Click.on(SearchResultsPage.SELECT_FILTER)
         );
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        actor.attemptsTo(Click.on(SearchResultsPage.BTN_LOWER_PRICE));
     }
 
     public static SpecificsFilters specificsFilters()
