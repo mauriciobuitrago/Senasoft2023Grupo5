@@ -21,9 +21,9 @@ public class HotelReservation implements Task {
             throw new RuntimeException(e);
         }
         actor.attemptsTo(Click.on(SearchResultsPage.BTN_RESERVA));
-        actor.attemptsTo(Enter.theValue("miguel").into(ReservationFormPage.TXT_FIRST_NAME));
-        actor.attemptsTo(Enter.theValue(" perez").into(ReservationFormPage.TXT_LAST_NAME));
-        actor.attemptsTo(Enter.theValue("miguelito89@gmail.com").into(ReservationFormPage.TXT_EMAIL));
+        actor.attemptsTo(Enter.theValue("Laura").into(ReservationFormPage.TXT_FIRST_NAME));
+        actor.attemptsTo(Enter.theValue("Gomez").into(ReservationFormPage.TXT_LAST_NAME));
+        actor.attemptsTo(Enter.theValue("josefergo98@gmail.com").into(ReservationFormPage.TXT_EMAIL));
         actor.attemptsTo(Click.on(ReservationFormPage.CHK_RESERVA));
         actor.attemptsTo(Enter.theValue("3135882901").into(ReservationFormPage.TXT_PHONE));
         actor.attemptsTo(Click.on(ReservationFormPage.SELECT_RESERVATION_HOUR));
