@@ -22,13 +22,13 @@ import java.util.List;
 public class SelectHotel implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
-        // Obtén el identificador de la ventana principal
+        // esto obtiene el identificador de la ventana principal
         String mainWindowHandle = BrowseTheWeb.as(actor).getDriver().getWindowHandle();
 
-        // Realiza clic en el botón para abrir una nueva ventana (o pestaña)
+
         actor.attemptsTo(Click.on(SearchResultsPage.BTN_HOTEL_DISPONIBILITY));
 
-        // Cambia a la nueva ventana (o pestaña)
+        // Esto cambia a la nueva pestaña
         for (String windowHandle : BrowseTheWeb.as(actor).getDriver().getWindowHandles()) {
             if (!windowHandle.equals(mainWindowHandle)) {
                 actor.attemptsTo(Switch.toWindow(windowHandle));

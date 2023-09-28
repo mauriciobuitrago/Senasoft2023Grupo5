@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-09-2023 11:08</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-09-2023 11:23</span>
     <br style="clear:left"/>
 </div>
 
@@ -189,9 +189,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">hotel reservation succesful
+                                <span class="error-color">hotel reservation succesful
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -208,28 +208,62 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such window exception: no such window: target window already closed</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchWindowException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.co.senasoft.tasks.HotelReservation.performAs(HotelReservation.java:28)<br />com.com.senasoft.stepsdefinitions.HotelReservationStepDefinition.theUserMakesTheReservation(HotelReservationStepDefinition.java:39)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="81cfd667b0c0cb50905e250f108a26bd8dd8ef0ed0e79de9f11c25de2ead30ef.png" title=" Given the user enter to the web page" width="1034"/>
-                <img src="2df3f7875e664ca4e1e3ec9a6b3769825cbe4674f4c235e5cd34cf7050f144be.png" title=" When the user applies the search filters" width="1034"/>
-                <img src="2df3f7875e664ca4e1e3ec9a6b3769825cbe4674f4c235e5cd34cf7050f144be.png" title=" User search filters" width="1034"/>
-                <img src="2df3f7875e664ca4e1e3ec9a6b3769825cbe4674f4c235e5cd34cf7050f144be.png" title=" When the user applies the search filters (completed)" width="1034"/>
-                <img src="009ab25af9f12a0ab0445e7cad21295c898e3a03b1e7cee0648f8a5eb370629f.png" title=" And the user clicks the search button" width="1034"/>
-                <img src="009ab25af9f12a0ab0445e7cad21295c898e3a03b1e7cee0648f8a5eb370629f.png" title=" User click search button" width="1034"/>
-                <img src="009ab25af9f12a0ab0445e7cad21295c898e3a03b1e7cee0648f8a5eb370629f.png" title=" And the user clicks the search button (completed)" width="1034"/>
-                <img src="cc94651c8d0afdf23bb9c3699af29916281d3f25202ff536cff1f9962d024c42.png" title=" And the user apply more specific filters in search results" width="1034"/>
-                <img src="cc94651c8d0afdf23bb9c3699af29916281d3f25202ff536cff1f9962d024c42.png" title=" User specifics filters" width="1034"/>
-                <img src="cc94651c8d0afdf23bb9c3699af29916281d3f25202ff536cff1f9962d024c42.png" title=" And the user apply more specific filters in search results (completed)" width="1034"/>
-                <img src="7f8f11af837207384c72722e0d9f59aa8cf22e8c91ad73991e0850bd064bff55.png" title=" And the user selects a hotel" width="1034"/>
-                <img src="7f8f11af837207384c72722e0d9f59aa8cf22e8c91ad73991e0850bd064bff55.png" title=" User select hotel" width="1034"/>
-                <img src="04a9d40260db46b5cac6a18b169d375220023efabf9388235629e7453667e5e6.png" title=" And the user selects a hotel (completed)" width="1034"/>
-                <img src="93e04cbffdc1541f0912d3f3515e3ab8bc1dc56363fa994f36089b314fc2a2a4.png" title=" And the user makes the reservation" width="1034"/>
-                <img src="93e04cbffdc1541f0912d3f3515e3ab8bc1dc56363fa994f36089b314fc2a2a4.png" title=" User hotel reservation" width="1034"/>
-                <img src="de4fbe57ddae0004900caa29fbf6156ea34aeae517dcc3617ad3e1c98aecd37d.png" title=" And the user makes the reservation (completed)" width="1034"/>
-                <img src="59dfb9f22518afdad26d2b2247702adbd2598411a0939582a75d1433c4073b0d.png" title=" Then the user should see a confirmation message" width="1034"/>
-                <img src="59dfb9f22518afdad26d2b2247702adbd2598411a0939582a75d1433c4073b0d.png" title=" Then reservation validation should be (true)" width="1034"/>
-                <img src="ebcd191bef7d46c3f82b29fb1ce4fbbbb9e9e448eeac3d21ed6424a979d89e7f.png" title=" Then reservation validation should be (true) (completed)" width="1034"/>
-                <img src="ebcd191bef7d46c3f82b29fb1ce4fbbbb9e9e448eeac3d21ed6424a979d89e7f.png" title=" Then the user should see a confirmation message (completed): <span class='success-color'>SUCCESS</span>" width="1034"/>
+                <img src="fffc92b20b034068cd95e2340dc06932fbf0f627aded9b027071069acfa7b4a9.png" title=" Given the user enter to the web page" width="1034"/>
+                <img src="100f2f9c966e269b670a69e6be6d050022a0851565a9e19528beac777726c8a2.png" title=" When the user applies the search filters" width="1034"/>
+                <img src="100f2f9c966e269b670a69e6be6d050022a0851565a9e19528beac777726c8a2.png" title=" User search filters" width="1034"/>
+                <img src="100f2f9c966e269b670a69e6be6d050022a0851565a9e19528beac777726c8a2.png" title=" When the user applies the search filters (completed)" width="1034"/>
+                <img src="b87c23d5de6a65f5ccec8b6d4e220b7505843573cfd957f05a1335e91ca7aaa0.png" title=" And the user clicks the search button" width="1034"/>
+                <img src="b87c23d5de6a65f5ccec8b6d4e220b7505843573cfd957f05a1335e91ca7aaa0.png" title=" User click search button" width="1034"/>
+                <img src="b87c23d5de6a65f5ccec8b6d4e220b7505843573cfd957f05a1335e91ca7aaa0.png" title=" And the user clicks the search button (completed)" width="1034"/>
+                <img src="981e1c60f63d03b8a845110cd3e0b0f2a10919ef1746b0faa260829d3214f748.png" title=" And the user apply more specific filters in search results" width="1034"/>
+                <img src="981e1c60f63d03b8a845110cd3e0b0f2a10919ef1746b0faa260829d3214f748.png" title=" User specifics filters" width="1034"/>
+                <img src="981e1c60f63d03b8a845110cd3e0b0f2a10919ef1746b0faa260829d3214f748.png" title=" And the user apply more specific filters in search results (completed)" width="1034"/>
+                <img src="e20fe652ab18d3ff9e69d12a281daf966d8afbd26eea30aad5c6cc60e4dd1d18.png" title=" And the user selects a hotel" width="1034"/>
+                <img src="e20fe652ab18d3ff9e69d12a281daf966d8afbd26eea30aad5c6cc60e4dd1d18.png" title=" User select hotel" width="1034"/>
+                <img src="8b81fb2168addb521b804db712a51c8bb1ff15f33676ae82f945fbc4e2d38b67.png" title=" And the user selects a hotel (completed)" width="1034"/>
+                <img src="8b81fb2168addb521b804db712a51c8bb1ff15f33676ae82f945fbc4e2d38b67.png" title=" And the user makes the reservation" width="1034"/>
+                <img src="8b81fb2168addb521b804db712a51c8bb1ff15f33676ae82f945fbc4e2d38b67.png" title=" User hotel reservation: <span class='error-color'>ERROR</span>" width="1034"/>
             </div>
         </div>
 
