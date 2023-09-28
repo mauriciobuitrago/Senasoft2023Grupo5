@@ -15,24 +15,23 @@ public class LanguageStepDefinition {
 
     @Given("that the user in on the page")
     public void thatTheUserInOnThePage() {
-       languageStep.openBrowser();
+        languageStep.openBrowser();
     }
 
     @When("he clicks on the language icon")
     public void heClicksOnTheLanguageIcon() {
-
+        languageStep.CloseModal();
+        languageStep.ClickListLanguaje();
     }
 
     @And("clicks on Deutsch")
     public void clicksOnDeutsch() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        languageStep.ClickLanguaje();
     }
 
     @Then("He shoud see the page in Deutsch")
     public void heShoudSeeThePageInDeutsch() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        languageStep.Validation();
     }
 
 
