@@ -12,7 +12,7 @@ public class SearchResultsPage {
     public static final Target BTN_HOTEL_DISPONIBILITY = Target.the("It is used to see hotel availability")
             .locatedBy("//div[@class = 'd4924c9e74']//div[3]//div[2]/div/div/div/div//div/div[1]");
     public static final Target BTN_SLIDE_RESERVATION = Target.the("It is used to scroll to the confirm reservation section")
-            .locatedBy("//div[@id= 'group_recommendation']//table//td[2]//tr[2]//a");
+            .locatedBy("//div[@id= 'group_recommendation']//table//td[3]//tr[2]/td/a");
     public static final Target BTN_RESERVA = Target.the("It is used to reserve and continue with the form steps")
             .locatedBy("//button[@class= 'txp-bui-main-pp bui-button bui-button--primary  hp_rt_input px--fw-cta js-reservation-button']");
 }
