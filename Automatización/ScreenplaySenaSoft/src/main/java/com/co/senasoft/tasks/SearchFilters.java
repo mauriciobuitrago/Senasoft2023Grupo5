@@ -12,7 +12,7 @@ public class SearchFilters implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(HomePage.BTN_CLOSE_MODAL));
-        actor.attemptsTo(Enter.theValue("Monteria").into(HomePage.TXT_DESTINY));
+        actor.attemptsTo(Enter.theValue("Pereira").into(HomePage.TXT_DESTINY));
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {

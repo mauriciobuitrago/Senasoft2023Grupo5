@@ -33,7 +33,8 @@ public class HotelReservationStepDefinition {
         OnStage.theActorInTheSpotlight().attemptsTo(SelectHotel.selectHotel());
         Thread.sleep(2000);
     }
-
+    // funciona hasta la pasarela de pago o reserva completa si es sin descuento genius
+    // varian constantemente los hoteles
     @And("^the user makes the reservation$")
     public void theUserMakesTheReservation() throws InterruptedException {
         OnStage.theActorInTheSpotlight().attemptsTo(HotelReservation.reservation());
