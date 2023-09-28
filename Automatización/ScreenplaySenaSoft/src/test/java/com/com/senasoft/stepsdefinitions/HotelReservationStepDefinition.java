@@ -1,10 +1,13 @@
 package com.com.senasoft.stepsdefinitions;
 
+import com.co.senasoft.questions.ReservationValidation;
 import com.co.senasoft.tasks.*;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
+import org.hamcrest.Matchers;
 
 public class HotelReservationStepDefinition {
 
@@ -32,12 +35,14 @@ public class HotelReservationStepDefinition {
     }
 
     @And("^the user makes the reservation$")
-    public void theUserMakesTheReservation() {
+    public void theUserMakesTheReservation() throws InterruptedException {
         OnStage.theActorInTheSpotlight().attemptsTo(HotelReservation.reservation());
+        Thread.sleep(1000);
     }
 
     @Then("^the user should see a confirmation message$")
     public void theUserShouldSeeAConfirmationMessage() {
-
+        OnStage.theActorInTheSpotlight().can(GivenWhenThen.seeThat(ReservationValidation.lblCompare()
+        , Matchers.is(true)));
     }
 }
