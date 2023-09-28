@@ -130,9 +130,9 @@
             <span class="breadcrumbs">
                 <a href="index.html">Home</a>
                 > <span class="truncate-40"><a
-                    href="32208b4d7ad535ed145032f6093330222e3c248f1d5b13c727b4a770e5115946.html">Currency Exchange</a></span>
+                    href="37c2a4e779a613355edaa2a8ea1d6bfc3f08ea166becaf942700aeec1274ee01.html">Flight Reservation</a></span>
                 > <span class="truncate-60"><a
-                    href="9de24a5ba4911ffa8d2e4ebc1d4365c05224fc69008008e3084bd816dac2b882.html">Successful currency exchange </a></span>
+                    href="8fedb96e578db62530fa8850fd6f7c42edc21abbaba4444f1333812e90b8f9e5.html">Succesful flight reservation </a></span>
                 > Screenshots
             </span>
         </div>
@@ -154,9 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-09-2023 09:36</span>
-
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-09-2023 11:29</span>
     <br style="clear:left"/>
 </div>
 
@@ -172,12 +170,12 @@
                             <div>
                                 <h3 class="discreet-story-header">
                                     <i class="fa fa-2x fa-comments-o"></i>
-                                    <span class="story-header-title">Currency Exchange </span>
+                                    <span class="story-header-title">Flight Reservation </span>
                                     <span class="badge tag-badge" style="">Feature</span>
                                 </h3>
 
                                 <div class="discreet-requirement-narrative-title">
-                                I as user, I need to change from COP to USD
+                                I as user, I need to book a flight
                                 </div>
                             </div>
 
@@ -191,9 +189,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Successful currency exchange
+                                <span class="error-color">Succesful flight reservation
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -210,16 +208,55 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such window exception: no such window: target window already closed</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchWindowException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.co.senasoft.tasks.SearchFlight.performAs(SearchFlight.java:31)<br />com.com.senasoft.stepsdefinitions.FlightStepDefinition.searchForAFlight(FlightStepDefinition.java:22)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-
-                <img src="c84d0244659a7b9576ec492e4e71e342b3105cab7a65f9dae6f06a14ec4a0559.png" title=" Given the user is on the web page" width="1034"/>
-                <img src="53dcf29747b1e0c119308b7cf07276f9be972b788be0f48122f3a62110b49d6a.png" title=" When the user clicks on the currency icon to change it" width="1034"/>
-                <img src="53dcf29747b1e0c119308b7cf07276f9be972b788be0f48122f3a62110b49d6a.png" title=" User click currency button" width="1034"/>
-                <img src="53dcf29747b1e0c119308b7cf07276f9be972b788be0f48122f3a62110b49d6a.png" title=" When the user clicks on the currency icon to change it (completed)" width="1034"/>
-                <img src="53dcf29747b1e0c119308b7cf07276f9be972b788be0f48122f3a62110b49d6a.png" title=" Then the user should see the succesful currency exchange" width="1034"/>
-                <img src="53dcf29747b1e0c119308b7cf07276f9be972b788be0f48122f3a62110b49d6a.png" title=" Then validation currency should be 'US$16'" width="1034"/>
-                <img src="53dcf29747b1e0c119308b7cf07276f9be972b788be0f48122f3a62110b49d6a.png" title=" Then the user should see the succesful currency exchange (completed): <span class='success-color'>SUCCESS</span>" width="1034"/>
+                <img src="fffc92b20b034068cd95e2340dc06932fbf0f627aded9b027071069acfa7b4a9.png" title=" Given the user enter to the web page" width="1034"/>
+                <img src="27c23fc087653c5c14f10d265ae75eab95ebba166bdde01fb2de8d5e6171734f.png" title=" When he goes to the flight section" width="1034"/>
+                <img src="27c23fc087653c5c14f10d265ae75eab95ebba166bdde01fb2de8d5e6171734f.png" title=" User click close modal" width="1034"/>
+                <img src="27c23fc087653c5c14f10d265ae75eab95ebba166bdde01fb2de8d5e6171734f.png" title=" User click flight button" width="1034"/>
+                <img src="108d968c9147feb0f840d580c4ef97688e2295edb8f12305116122b9e4da68b9.png" title=" When he goes to the flight section" width="1034"/>
+                <img src="108d968c9147feb0f840d580c4ef97688e2295edb8f12305116122b9e4da68b9.png" title=" User click flight button (completed)" width="1034"/>
+                <img src="108d968c9147feb0f840d580c4ef97688e2295edb8f12305116122b9e4da68b9.png" title=" And search for a flight" width="1034"/>
+                <img src="108d968c9147feb0f840d580c4ef97688e2295edb8f12305116122b9e4da68b9.png" title=" User search flight: <span class='error-color'>ERROR</span>" width="1034"/>
             </div>
         </div>
 
