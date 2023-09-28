@@ -1,8 +1,10 @@
 Feature: Register
   I as user, I need to register me
 
-  Scenario Outline: Succesful register
+  Background:
     Given the user enter to the web page
+
+  Scenario Outline: Succesful register
     And the user clicks on the 'hazte una cuenta' button
     When the user enter his data
       | email   | password   |
@@ -12,3 +14,15 @@ Feature: Register
     Examples:
       | email                  | password      |
       | Josefergo8999@gmail.com | Joselito23-2  |
+
+  Scenario Outline: Failed register
+    And the user clicks on the 'hazte una cuenta' button
+    When the user enter his email and password but not the confirmation password
+      | email   | password   |
+      | <email> | <password> |
+    Then the user should see the failed register
+
+    Examples:
+      | email                  | password      |
+      | Josefergo8999@gmail.com | Joselito23-2  |
+
